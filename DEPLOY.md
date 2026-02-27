@@ -42,6 +42,18 @@ git remote add origin https://github.com/SEU_USUARIO/atelie-viva-arte-site.git
 git push -u origin work:main
 ```
 
+### 2.1) Comandos prontos para o seu caso (repositório já criado)
+
+Como você já criou o repositório **atelie viva arte site**, execute na pasta do projeto:
+
+```bash
+git remote remove origin 2>/dev/null || true
+git remote add origin https://github.com/SEU_USUARIO/atelie-viva-arte-site.git
+git push -u origin work:main
+```
+
+> Se o nome real do repositório no GitHub estiver sem hífen, ajuste somente a URL do `git remote add origin`.
+
 ### 3) Ativar GitHub Pages por Actions
 
 1. No repositório, vá em **Settings → Pages**.
